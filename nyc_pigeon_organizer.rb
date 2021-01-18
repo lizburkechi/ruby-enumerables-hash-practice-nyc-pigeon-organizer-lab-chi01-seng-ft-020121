@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
     #binding.pry
     value.each do |inner_key, pigeon_names|
       pigeon_names.each do |name|
-        binding.pry
+        #binding.pry
         if !finished_array[name]
           finished_array[name] = {}
         end
@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
         end
         finished_array[name][key].push(inner_key)
       end
-      finished_array
+      #finished_array
     end
   binding.pry
 end
