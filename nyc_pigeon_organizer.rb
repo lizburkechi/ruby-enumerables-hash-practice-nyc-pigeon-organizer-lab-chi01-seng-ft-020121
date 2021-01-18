@@ -3,10 +3,10 @@
 def nyc_pigeon_organizer(data)
 
   finished_hash = data.each_with_object({}) do |(key, value), finished_array|
-    
+
     value.each do |inner_key, pigeon_names|
       pigeon_names.each do |name|
-        
+
         if !finished_array[name]
           finished_array[name] = {}
         end
@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
         end
         finished_array[name][key].push(inner_key)
       end
-      
+
     end
-  
+
 end
